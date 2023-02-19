@@ -13,4 +13,8 @@ public class userService {
     public User addUser(User user){
         return userepository.save(user);
     }
+
+    public User getUser(int id){
+        return userepository.findById(id).get();
+    }
 }
